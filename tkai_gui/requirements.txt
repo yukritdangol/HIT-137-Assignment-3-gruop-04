@@ -1,0 +1,21 @@
+# Pinned only where safer on CPU-only setups
+pip>=24.2
+setuptools>=70.0.0
+wheel>=0.44.0
+
+# Core ML (CPU wheels)
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# HF ecosystem
+diffusers
+transformers
+accelerate
+safetensors
+
+# Imaging
+Pillow
+
+# Testing
+pytest
